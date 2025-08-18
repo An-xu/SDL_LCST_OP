@@ -24,7 +24,7 @@ This Self-Driving Laboratory (SDL) is an automated experimental platform designe
 **Key Capabilities:**
 - Automated liquid handling and sample preparation
 - Precise temperature control with Peltier heating/cooling
-- Real-time UV turbidity measurements for LCST determination
+- Real-time transmittance measurements for LCST determination
 - Intelligent data analysis and visualization
 - Autonomous experimental design and execution
 
@@ -33,12 +33,12 @@ This Self-Driving Laboratory (SDL) is an automated experimental platform designe
 ### 🤖 Hardware Automation
 - **3 Stepper Motors**: Precise liquid dispensing (2.4 μL resolution per step)
 - **5 Temperature Sensors**: Multi-zone temperature monitoring and control
-- **15 Pneumatic Valves**: Automated sample routing (3 groups × 5 valves)
-- **UV Sensors**: Real-time turbidity measurements for LCST detection
+- **15 Valves**: Automated sample routing (3 groups × 5 valves)
+- **Photodiode Sensors**: Real-time transmittance measurements for LCST detection
 - **Peltier Controllers**: PID-controlled heating/cooling systems
 
 ### 💻 Software Features
-- **Real-time Monitoring**: Live temperature and UV sensor readings
+- **Real-time Monitoring**: Live temperature and transmittance readings
 - **Automated Sweeps**: Programmable temperature ramping protocols
 - **Data Logging**: Timestamped experimental data storage
 - **Advanced Analytics**: LCST calculation with statistical analysis
@@ -49,7 +49,6 @@ This Self-Driving Laboratory (SDL) is an automated experimental platform designe
 - **Temperature Calibration**: Set vs. actual temperature analysis
 - **LCST Determination**: Automated 50% transmission point calculation
 - **Data Visualization**: Interactive plots with error bars and statistics
-- **Export Capabilities**: CSV data export for further analysis
 
 
 ## 🔧 Hardware Requirements
