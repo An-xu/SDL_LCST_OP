@@ -1,1 +1,1 @@
-# SDL_LCST_OP
+# Self-Driving Laboratory Optimizes the Lower Critical Solution Temperature of Thermoresponsive Polymers
