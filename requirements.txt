@@ -1,0 +1,14 @@
+# Automated Liquid Distribution System - Requirements
+# Core GUI Framework
+PyQt6==6.7.1
+
+# Hardware Communication
+pyserial==3.5
+PyFirmata==1.1.0
+
+# Data Analysis and Visualization
+matplotlib==3.9.2
+simple-pid==2.0.0
+pandas==1.4.4
+numpy==1.26.4
+scipy==1.13.1
