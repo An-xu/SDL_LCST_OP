@@ -10,11 +10,10 @@
 
 - [Overview](#overview)
 - [Features](#features)
-- [System Architecture](#system-architecture)
 - [Hardware Requirements](#hardware-requirements)
 - [Installation](#installation)
-  - [Usage](#usage)
-  - [Data Analysis](#data-analysis)
+- [Usage](#usage)
+- [Data Analysis](#data-analysis)
 - [Citation](#citation)
 
 
@@ -52,45 +51,20 @@ This Self-Driving Laboratory (SDL) is an automated experimental platform designe
 - **Data Visualization**: Interactive plots with error bars and statistics
 - **Export Capabilities**: CSV data export for further analysis
 
-## 🏗️ System Architecture
-
-```
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│   PyQt6 GUI     │◄──►│   Main Control   │◄──►│   Data Analysis │
-│                 │    │     System       │    │                 │
-└─────────────────┘    └──────────────────┘    └─────────────────┘
-         │                       │                       │
-         ▼                       ▼                       ▼
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│  User Interface │    │   Hardware I/O   │    │  Visualization  │
-│   - Controls    │    │   - Arduino      │    │   - Matplotlib  │
-│   - Monitoring  │    │   - PyFirmata    │    │   - Statistics  │
-│   - Settings    │    │   - Serial Comm  │    │   - Export      │
-└─────────────────┘    └──────────────────┘    └─────────────────┘
-                                │
-                                ▼
-                    ┌──────────────────────┐
-                    │   Physical Hardware  │
-                    │  - Motors & Pumps    │
-                    │  - Temperature Ctrl  │
-                    │  - Valves & Sensors  │
-                    └──────────────────────┘
-```
 
 ## 🔧 Hardware Requirements
 
 ### Electronics
-- **Arduino Mega 2560** (or compatible)
-- **5× Temperature Sensor Modules** (with analog output)
+- **Arduino Mega 2560** 
+- **5× Temperature Sensor Modules** 
 - **5× Peltier Cooling/Heating Elements**
-- **5× H-Bridge Motor Drivers** (for Peltier control)
-- **3× Stepper Motor Drivers** (for liquid pumps)
-- **15× Relay Modules** (for valve control)
-- **5× Photodiode Sensors** (analog output)
+- **5× Motor Drivers** (for Peltier control)
+- **3× Stepper Motor Drivers** (for pumps)
+- **5× Photodiode Sensors** 
 
 ### Mechanical Components
-- **3× Stepper Motors** (for syringe pumps)
-- **15× Pneumatic Valves** (sample routing)
+- **3× Stepper Motors** 
+- **15× Valves** 
 - **Temperature-controlled sample holders**
 - **Fluidic connections and tubing**
 
@@ -120,7 +94,9 @@ This Self-Driving Laboratory (SDL) is an automated experimental platform designe
 3. **Hardware Connection**
    - Connect Arduino Mega to your computer via USB
    - Upload the appropriate Firmata firmware to Arduino
+   - Wire components according to pin assignments
    - Verify all sensor and actuator connections
+   - Test power supplies and safety systems
 
 4. **Launch the Application**
    ```bash
