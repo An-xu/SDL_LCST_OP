@@ -158,7 +158,14 @@ The system determines LCST by:
 If you use this system in your research, please cite our paper:
 
 ```bibtex
-@article{
+@misc{xu2025selfdrivinglaboratoryoptimizeslower,
+      title={Self-Driving Laboratory Optimizes the Lower Critical Solution Temperature of Thermoresponsive Polymers}, 
+      author={Guoyue Xu and Renzheng Zhang and Tengfei Luo},
+      year={2025},
+      eprint={2509.05351},
+      archivePrefix={arXiv},
+      primaryClass={cond-mat.soft},
+      url={https://arxiv.org/abs/2509.05351}, 
 }
 ```
 
